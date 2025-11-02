@@ -1,0 +1,1368 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap-icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="responsive.css">
+    <!-- JS -->
+    <script src="javaScript.js"></script>
+    <title>Netflix Clone</title>
+    <link rel="shortcut icon" href="Images/NL.png" type="image/png">
+  </head>
+  <body>
+    
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg netflix-navbar netflix-padding">
+      <div class="container-fluid">
+        <div class="netflix-row">
+          <div class=" d-flex align-items-center left">
+            <a class="navbar-logo" href="#">
+              <img src="Images/logo.png" alt="Img not found">
+            </a>
+            <div class="netflix-nav">
+                  <a href="Home.html"><button>Home</button></a>
+                  <a href="TV_Shows.html"><button>TV Shows</button></a>
+                  <a href="Movies.html"><button>Movies</button></a>
+                  <a href="My_list.html"><button>My List</button></a>
+            </div>
+            <div class="netflix-dropdown-box dropdown">
+              <button class="netflix-dropdown dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" >
+                Browse
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="Home.html">Home</a></li>
+                <li><a class="dropdown-item" href="TV_Shows.html">TV Shows</a></li>
+                <li><a class="dropdown-item" href="Movies.html">Movies</a></li>
+                <li><a class="dropdown-item" href="My_list.html">My List</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="right d-flex align-items-center" style="margin-right: 5px;">
+            <div class="box">
+              <input type="text" placeholder="Search...">
+              <a><i class="bi bi-search"></i></a>
+            </div>
+            <i class="bi bi-bell-fill" ></i>
+            <section class="netflix-profile">
+              <div class="dropdown">
+                <button type="button" class="btn dropdown-toggle " style="color: #fff;" data-bs-toggle="dropdown">
+                  <img src="C:Users\Dev\OneDrive\FSD IP\Images/avtar.jpg" alt="img not found">
+                </button>
+                <div class="dropdown-menu dropdown-content-netflix pre-tag">
+                  <div class="dropdown-item" onclick="Dev()"><pre><img src="Images/avtar1.jpg">   <a class="pre-text" > Dev</a></pre></div>
+                  <div class="dropdown-item" onclick="Luffy()"><pre><img src="Images/avtar2.png">   <a class="pre-text"> Luffy</a></pre></div>
+                  <div class="dropdown-divider"></div>
+                  <div class="dropdown-item center__1" onclick="signout()">     <a class="pre-text">Sign Out</a></div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- /header -->
+
+
+    <!-- video -->
+      <div>
+         <section class="netflix-home-video">
+            <div class="top"></div>
+            <div class="bottom"></div>
+            <video src="C:\Users\Dev\OneDrive\FSD IP\Videos/Naruto.mp4"  autoplay muted loop ></video>
+            <div class="content">
+                <section class="left">
+                   <img src="C:Users\Dev\OneDrive\FSD IP\Images/Naruto Logo.png" alt="">
+                    <div class="d-flex mt-2">
+                      <a href="C:\Users\Dev\OneDrive\FSD IP\Videos/NV.mp4">
+                      <button class="btn btn-light m-2 mt-4" > <i class="bi bi-play-fill" style="color: black; padding: 0%;"></i> Play Now </button>
+                     </a>
+                      <button class="btn btn-secondary m-2 mt-4"><i class="bi bi-info-circle" style=" padding: 0%;"></i> More Info</button>
+                    </div>
+                </section>
+            </div>
+          </section>
+      </div>
+    <!-- video -->
+
+      <!-- sliders -->
+      <div >
+        <!-- slide-1 -->
+        <div class="container-fluid slider">
+          <section class="d-flex justify-content-between margin-right">
+            <p class="text-white"> <b>Trending</b> </p>
+            <div class="carousel-buttons">
+              <button  type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active tab-change-btn"></button>
+              <button class="tab-change-btn" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+              <button class="tab-change-btn" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+            </div>
+          </section>
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <section class="d-flex" >
+                  <div class="card" >
+                  <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4">  <img src="C:Users\Dev\OneDrive\FSD IP\Images/S1.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body"> 
+                        <section class="d-flex justify-content-between">
+                          <div>
+                            <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4"> <i class="bi bi-play-circle-fill card-icon"  ></i></a>
+                            <i  class="bi bi-plus-circle card-icon"></i>
+                          </div>
+                          <div>
+                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                          </div>
+                        </section>
+                        <section class="d-flex align-items-center justify-content-between" >
+                           <p class="netflix-card-text m-0" style="color: green;">2 Seasons</p> 
+                             <span class="m-2 netflix-card-text text-white">U/A 18+</span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                          
+                          </section>
+                          <span class="netflix-card-text text-white">Love • Rommance • Drama</span>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4">  <img src="C:Users\Dev\OneDrive\FSD IP\Images/S2.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4"> <i class="bi bi-play-circle-fill card-icon"  ></i></a>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: green;">3 Seasons</p> 
+                           <span class="m-2 netflix-card-text text-white">Limited Series</span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                          </section>
+                          <div class="netflix-progress">
+                          <div class="progress" >
+                            <div class="progress-bar  progress-bar-striped progress-bar-animated"></div>
+                         </div> <span >20 of 50m</span></div>
+                          <span class="netflix-card-text text-white" style="margin-left: 15%;">Action • Psychological • Thriller</span>
+                  </div>
+                  </div>
+                  <div class="card">
+                    <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4">  <img src="C:Users\Dev\OneDrive\FSD IP\Images/S3.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4"> <i class="bi bi-play-circle-fill card-icon"  ></i></a>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: green;">1 Seasons</p> 
+                           <span class="m-2 netflix-card-text text-white">Limited Series</span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
+
+                  </div>
+                </div>
+                  <div class="card" >
+                    <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4">  <img src="C:Users\Dev\OneDrive\FSD IP\Images/S4.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4"> <i class="bi bi-play-circle-fill card-icon"  ></i></a>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">3h 21m</p> 
+                           <span class="m-2 netflix-card-text text-white">U/A 18+</span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <div class="netflix-progress">
+                          <div class="progress" >
+                            <div class="progress-bar  progress-bar-striped progress-bar-animated"></div>
+                         </div> <span >14 of 60m</span></div>
+                        <span class="netflix-card-text text-white">Sci-fi • Psychological • Action</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4">  <img src="C:Users\Dev\OneDrive\FSD IP\Images/S5.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4"> <i class="bi bi-play-circle-fill card-icon"  ></i></a>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">4 Seasons</p> 
+                           <span class="m-2 netflix-card-text text-white">U/A 18+</span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <div class="netflix-progress">
+                          <div class="progress" >
+                            <div class="progress-bar  progress-bar-striped progress-bar-animated"></div>
+                         </div> <span >50 of 60m</span></div>
+                        <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4">  <img src="C:Users\Dev\OneDrive\FSD IP\Images/S6.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4"> <i class="bi bi-play-circle-fill card-icon"  ></i></a>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"> 3 Seasons</p> 
+                           <span class="m-2 netflix-card-text text-white">Limited Series</span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
+                  </div>
+                  </div>
+                </section>
+              </div>
+              <div class="carousel-item">
+                <section class="d-flex">
+                  <div class="card">
+                    <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4">  <img src="C:Users\Dev\OneDrive\FSD IP\Images/S7.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4"> <i class="bi bi-play-circle-fill card-icon"  ></i></a>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"> 1 Seasons</p> 
+                           <span class="m-2 netflix-card-text text-white">Limited Series</span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4">  <img src="C:Users\Dev\OneDrive\FSD IP\Images/S8.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4"> <i class="bi bi-play-circle-fill card-icon"  ></i></a>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"> 1 Seasons</p> 
+                           <span class="m-2 netflix-card-text text-white">U/A 18+</span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
+                  </div>
+                  </div>
+                  <div class="card">
+                    <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4">  <img src="C:Users\Dev\OneDrive\FSD IP\Images/S9.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4"> <i class="bi bi-play-circle-fill card-icon"  ></i></a>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"> 2 Seasons</p> 
+                           <span class="m-2 netflix-card-text text-white">U/A 18+</span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4">  <img src="C:Users\Dev\OneDrive\FSD IP\Images/S10.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4"> <i class="bi bi-play-circle-fill card-icon"  ></i></a>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"> 2 Seasons</p> 
+                           <span class="m-2 netflix-card-text text-white">U/A 18+</span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4">  <img src="C:Users\Dev\OneDrive\FSD IP\Images/S11.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4"> <i class="bi bi-play-circle-fill card-icon"  ></i></a>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"> 8 Seasons</p> 
+                           <span class="m-2 netflix-card-text text-white">Limited Series</span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4">  <img src="C:Users\Dev\OneDrive\FSD IP\Images/S12.jpeg" class="card-img-top" alt="..."></a>
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4"> <i class="bi bi-play-circle-fill card-icon"  ></i></a>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"> 5 Seasons</p> 
+                           <span class="m-2 netflix-card-text text-white">U/A 18+</span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
+                  </div>
+                  </div>
+                </section>
+              </div>
+              <div class="carousel-item">
+                <section class="d-flex" >
+                  <div class="card">
+                    <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4">  <img src="C:Users\Dev\OneDrive\FSD IP\Images/S13.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4"> <i class="bi bi-play-circle-fill card-icon"  ></i></a>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"> 1 Seasons</p> 
+                           <span class="m-2 netflix-card-text text-white">Limited Series</span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4">  <img src="C:Users\Dev\OneDrive\FSD IP\Images/S14.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4"> <i class="bi bi-play-circle-fill card-icon"  ></i></a>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"> 1 Seasons</p> 
+                           <span class="m-2 netflix-card-text text-white">U/A 18+</span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4">  <img src="C:Users\Dev\OneDrive\FSD IP\Images/S15.jpeg" class="card-img-top" alt="..."></a>
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4"> <i class="bi bi-play-circle-fill card-icon"  ></i></a>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"> 2 Seasons</p> 
+                           <span class="m-2 netflix-card-text text-white">U/A 18+</span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4">  <img src="C:Users\Dev\OneDrive\FSD IP\Images/S16.jpeg" class="card-img-top" alt="..."></a>
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4"> <i class="bi bi-play-circle-fill card-icon"  ></i></a>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"> 2 Seasons</p> 
+                           <span class="m-2 netflix-card-text text-white">Limited Series</span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4">  <img src="C:Users\Dev\OneDrive\FSD IP\Images/S17.jpeg" class="card-img-top" alt="..."></a>
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4"> <i class="bi bi-play-circle-fill card-icon"  ></i></a>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"> 2 Seasons</p> 
+                           <span class="m-2 netflix-card-text text-white">Limited Series</span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4">  <img src="C:Users\Dev\OneDrive\FSD IP\Images/S18.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4"> <i class="bi bi-play-circle-fill card-icon"  ></i></a>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"> 3 Seasons</p> 
+                           <span class="m-2 netflix-card-text text-white">Limited Series</span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
+                  </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <img src="C:Users\Dev\OneDrive\FSD IP\Images/prev.png" alt="...">
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <img src="C:Users\Dev\OneDrive\FSD IP\Images/next.png" alt="...">
+            </button>
+          </div>
+        </div>
+        <!-- /slide-1 -->
+
+        <!-- slide-2 -->
+        <div class="container-fluid  slide2">
+          <section class="d-flex justify-content-between margin-right margin-title">
+            <p class="text-white"> <b>Hollywood</b> </p>
+            <div class="">
+              <button  type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="0" class="active tab-change-btn" aria-current="true" aria-label="Slide 1"></button>
+              <button class="tab-change-btn" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button class="tab-change-btn" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+          </section>
+          <div id="carouselExampleIndicators1" class="carousel slide" data-bs-ride="carousel">
+            
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <section class="d-flex" >
+                  <div class="card" >
+                    <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4">  <img src="C:Users\Dev\OneDrive\FSD IP\Images/H1.png" class="card-img-top" alt="..."></a>
+                      <div class="card-body"> 
+                        <section class="d-flex justify-content-between">
+                          <div>
+                            <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4"> <i class="bi bi-play-circle-fill card-icon"  ></i></a>
+                            <i  class="bi bi-plus-circle card-icon"></i>
+                          </div>
+                          <div>
+                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                          </div>
+                        </section>
+                        <section class="d-flex align-items-center justify-content-between" >
+                           <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"> 3 Seasons</p> 
+                             <span class="m-2 netflix-card-text text-white">Limited Series</span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                          </section>
+                          <div class="netflix-progress">
+                            <div class="progress" >
+                              <div class="progress-bar  progress-bar-striped progress-bar-animated"></div>
+                           </div> <span >5 of 56m</span></div>
+                          <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4">  <img src="C:Users\Dev\OneDrive\FSD IP\Images/H2.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4"> <i class="bi bi-play-circle-fill card-icon"  ></i></a>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"> 3 Seasons</p> 
+                           <span class="m-2 netflix-card-text text-white">U/A 18+</span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        </section>
+                        <div class="netflix-progress">
+                          <div class="progress" >
+                            <div class="progress-bar  progress-bar-striped progress-bar-animated"></div>
+                         </div> <span >36 of 57m</span></div>
+                        <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
+                  </div>
+                  </div>
+                  <div class="card">
+                    <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4">  <img src="C:Users\Dev\OneDrive\FSD IP\Images/H3.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4"> <i class="bi bi-play-circle-fill card-icon"  ></i></a>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"> 4 Seasons</p> 
+                           <span class="m-2 netflix-card-text text-white">U/A 18+</span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
+                  </div> <div class="card-body"> 
+                        <section class="d-flex justify-content-between">
+                          <div>
+                            <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4"> <i class="bi bi-play-circle-fill card-icon"  ></i></a>
+                            <i  class="bi bi-plus-circle card-icon"></i>
+                          </div>
+                          <div>
+                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                          </div>
+                        </section>
+                        <section class="d-flex align-items-center justify-content-between" >
+                           <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"> 4 Seasons</p> 
+                             <span class="m-2 netflix-card-text text-white">Limited Series</span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                          
+                          </section>
+                          <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
+                    </div>
+                  </div>
+                  <div class="card" >
+                    <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4">  <img src="C:Users\Dev\OneDrive\FSD IP\Images/H4.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4"> <i class="bi bi-play-circle-fill card-icon"  ></i></a>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"> 4 Seasons</p> 
+                           <span class="m-2 netflix-card-text text-white">U/A 18+</span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4">  <img src="C:Users\Dev\OneDrive\FSD IP\Images/H5.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4"> <i class="bi bi-play-circle-fill card-icon"  ></i></a>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"> 6 Seasons</p> 
+                           <span class="m-2 netflix-card-text text-white">Limited Series</span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4">  <img src="C:Users\Dev\OneDrive\FSD IP\Images/H6.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4"> <i class="bi bi-play-circle-fill card-icon"  ></i></a>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"> 6 Seasons</p> 
+                           <span class="m-2 netflix-card-text text-white">U/A 18+</span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        </section>
+                        <div class="netflix-progress">
+                          <div class="progress" >
+                            <div class="progress-bar  progress-bar-striped progress-bar-animated"></div>
+                         </div> <span >30 of 50m</span></div>
+                        <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
+                  </div>
+                  </div>
+                </section>
+              </div>
+              <div class="carousel-item">
+                <section class="d-flex ">
+                  <div class="card">
+                    <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4">  <img src="C:Users\Dev\OneDrive\FSD IP\Images/H7.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"> 6 Seasons</p> 
+                           <span class="m-2 netflix-card-text text-white">Limited Series</span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4">  <img src="C:Users\Dev\OneDrive\FSD IP\Images/H8.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <i class="bi bi-play-circle-fill card-icon"  ></i>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"> 2 Seasons</p> 
+                           <span class="m-2 netflix-card-text text-white">U/A 18+</span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
+                  </div>
+                  </div>
+                  <div class="card">
+                    <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4">  <img src="C:Users\Dev\OneDrive\FSD IP\Images/H9.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4"> <i class="bi bi-play-circle-fill card-icon"  ></i></a>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"> 2 Seasons</p> 
+                           <span class="m-2 netflix-card-text text-white">Limited Series</span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4">  <img src="C:Users\Dev\OneDrive\FSD IP\Images/H10.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4"> <i class="bi bi-play-circle-fill card-icon"  ></i></a>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"> 1 Seasons</p> 
+                           <span class="m-2 netflix-card-text text-white">U/A 18+</span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4">  <img src="C:Users\Dev\OneDrive\FSD IP\Images/H11.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4"> <i class="bi bi-play-circle-fill card-icon"  ></i></a>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"> 1 Seasons</p> 
+                           <span class="m-2 netflix-card-text text-white">U/A 18+</span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4">  <img src="C:Users\Dev\OneDrive\FSD IP\Images/H12.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4"> <i class="bi bi-play-circle-fill card-icon"  ></i></a>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"> 3 Seasons</p> 
+                           <span class="m-2 netflix-card-text text-white">U/A 18+</span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
+                  </div>
+                  </div>
+                </section>
+              </div>
+              <div class="carousel-item">
+                <section class="d-flex ">
+                  <div class="card" >
+                    <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4">  <img src="C:Users\Dev\OneDrive\FSD IP\Images/H13.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4"> <i class="bi bi-play-circle-fill card-icon"  ></i></a>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"> 1 Seasons</p> 
+                           <span class="m-2 netflix-card-text text-white">Limited Series</span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4">  <img src="C:Users\Dev\OneDrive\FSD IP\Images/H14.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4"> <i class="bi bi-play-circle-fill card-icon"  ></i></a>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"> 3 Seasons</p> 
+                           <span class="m-2 netflix-card-text text-white">Limited Series</span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4">  <img src="C:Users\Dev\OneDrive\FSD IP\Images/H15.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4"> <i class="bi bi-play-circle-fill card-icon"  ></i></a>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"> 2 Seasons</p> 
+                           <span class="m-2 netflix-card-text text-white">Limited Series</span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4">  <img src="C:Users\Dev\OneDrive\FSD IP\Images/H16.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4"> <i class="bi bi-play-circle-fill card-icon"  ></i></a>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"> 2 Seasons</p> 
+                           <span class="m-2 netflix-card-text text-white">Limited Series</span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4">  <img src="C:Users\Dev\OneDrive\FSD IP\Images/H17.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4"> <i class="bi bi-play-circle-fill card-icon"  ></i></a>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"> 2 Seasons</p> 
+                           <span class="m-2 netflix-card-text text-white">Limited Series</span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4">  <img src="C:Users\Dev\OneDrive\FSD IP\Images/H18.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4"> <i class="bi bi-play-circle-fill card-icon"  ></i></a>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"> 1 Seasons</p> 
+                           <span class="m-2 netflix-card-text text-white">Limited Series</span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
+                  </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="prev">
+              <img src="C:Users\Dev\OneDrive\FSD IP\Images/prev.png" alt="...">
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="next">
+              <img src="C:Users\Dev\OneDrive\FSD IP\Images/next.png" alt="...">
+            </button>
+          </div>
+        </div>
+        <!-- /slide-2 -->
+
+        <!-- slide-3 -->
+        <div class="container-fluid  slide3">
+          <section class="d-flex justify-content-between margin-right margin-title2">
+            <p class="text-white"> <b>Bollywood</b> </p>
+            <div class="">
+              <button  type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active tab-change-btn" aria-current="true" aria-label="Slide 1"></button>
+              <button class="tab-change-btn" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button class="tab-change-btn" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+          </section>
+          <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel">
+            
+            <div class="carousel-inner" style="position: relative; overflow: visible;">
+              <div class="carousel-item active">
+                <section class="d-flex " >
+                  <div class="card" >
+                    <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4">  <img src="C:Users\Dev\OneDrive\FSD IP\Images/B1.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body"> 
+                        <section class="d-flex justify-content-between">
+                          <div>
+                            <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4"> <i class="bi bi-play-circle-fill card-icon"  ></i></a>
+                            <i  class="bi bi-plus-circle card-icon"></i>
+                          </div>
+                          <div>
+                            <i class="bi bi-arrow-down-circle card-icon"></i>
+                          </div>
+                        </section>
+                        <section class="d-flex align-items-center justify-content-between" >
+                           <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">2h 24m</p> 
+                             <span class="m-2 netflix-card-text text-white">Limited Series</span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                          
+                          </section>
+                          <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4">  <img src="C:Users\Dev\OneDrive\FSD IP\Images/B2.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4"> <i class="bi bi-play-circle-fill card-icon"  ></i></a>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">3h 05m</p> 
+                           <span class="m-2 netflix-card-text text-white">Limited Series</span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
+                  </div>
+                  </div>
+                  <div class="card">
+                    <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4">  <img src="C:Users\Dev\OneDrive\FSD IP\Images/B3.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4"> <i class="bi bi-play-circle-fill card-icon"  ></i></a>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);"> 1h 59m</p> 
+                           <span class="m-2 netflix-card-text text-white">Limited Series</span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
+                    </div>
+                  </div>
+                  <div class="card" >
+                    <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4">  <img src="C:Users\Dev\OneDrive\FSD IP\Images/B4.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4"> <i class="bi bi-play-circle-fill card-icon"  ></i></a>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">2h 45m</p> 
+                           <span class="m-2 netflix-card-text text-white">Limited Series</span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4">  <img src="C:Users\Dev\OneDrive\FSD IP\Images/B5.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4"> <i class="bi bi-play-circle-fill card-icon"  ></i></a>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">2h 36m</p> 
+                           <span class="m-2 netflix-card-text text-white">Limited Series</span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4">  <img src="C:Users\Dev\OneDrive\FSD IP\Images/B6.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4"> <i class="bi bi-play-circle-fill card-icon"  ></i></a>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">3h 02m</p> 
+                           <span class="m-2 netflix-card-text text-white">Limited Series</span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
+                  </div>
+                  </div>
+                </section>
+              </div>
+              <div class="carousel-item">
+                <section class="d-flex">
+                  <div class="card">
+                    <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4">  <img src="C:Users\Dev\OneDrive\FSD IP\Images/B7.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4"> <i class="bi bi-play-circle-fill card-icon"  ></i></a>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">2h 13m</p> 
+                           <span class="m-2 netflix-card-text text-white">Limited Series</span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4">  <img src="C:Users\Dev\OneDrive\FSD IP\Images/B8.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4"> <i class="bi bi-play-circle-fill card-icon"  ></i></a>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">1h 49m</p> 
+                           <span class="m-2 netflix-card-text text-white">Limited Series</span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
+                  </div>
+                  </div>
+                  <div class="card">
+                    <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4">  <img src="C:Users\Dev\OneDrive\FSD IP\Images/B9.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4"> <i class="bi bi-play-circle-fill card-icon"  ></i></a>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">3h 29m</p> 
+                           <span class="m-2 netflix-card-text text-white">Limited Series</span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4">  <img src="C:Users\Dev\OneDrive\FSD IP\Images/B10.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4"> <i class="bi bi-play-circle-fill card-icon"  ></i></a>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">2h 14m</p> 
+                           <span class="m-2 netflix-card-text text-white">Limited Series</span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4">  <img src="C:Users\Dev\OneDrive\FSD IP\Images/B11.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4"> <i class="bi bi-play-circle-fill card-icon"  ></i></a>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">2h 28m</p> 
+                           <span class="m-2 netflix-card-text text-white">Limited Series</span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4">  <img src="C:Users\Dev\OneDrive\FSD IP\Images/B12.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4"> <i class="bi bi-play-circle-fill card-icon"  ></i></a>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">1h 51m</p> 
+                           <span class="m-2 netflix-card-text text-white">Limited Series</span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
+                  </div>
+                  </div>
+                </section>
+              </div>
+              <div class="carousel-item">
+                <section class="d-flex ">
+                  <div class="card" >
+                    <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4">  <img src="C:Users\Dev\OneDrive\FSD IP\Images/B13.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4"> <i class="bi bi-play-circle-fill card-icon"  ></i></a>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">1h 39m</p> 
+                           <span class="m-2 netflix-card-text text-white">Limited Series</span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4">  <img src="C:Users\Dev\OneDrive\FSD IP\Images/B14.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4"> <i class="bi bi-play-circle-fill card-icon"  ></i></a>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">1h 22m</p> 
+                           <span class="m-2 netflix-card-text text-white">Limited Series</span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4">  <img src="C:Users\Dev\OneDrive\FSD IP\Images/B15.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4"> <i class="bi bi-play-circle-fill card-icon"  ></i></a>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">3h 33m</p> 
+                           <span class="m-2 netflix-card-text text-white">Limited Series</span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4">  <img src="C:Users\Dev\OneDrive\FSD IP\Images/B16.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4"> <i class="bi bi-play-circle-fill card-icon"  ></i></a>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">3h 03m</p> 
+                           <span class="m-2 netflix-card-text text-white">Limited Series</span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4">  <img src="C:Users\Dev\OneDrive\FSD IP\Images/B17.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4"> <i class="bi bi-play-circle-fill card-icon"  ></i></a>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">2h 15m</p> 
+                           <span class="m-2 netflix-card-text text-white">Limited Series</span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
+                  </div>
+                  </div>
+                  <div class="card" >
+                    <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4">  <img src="C:Users\Dev\OneDrive\FSD IP\Images/B18.png" class="card-img-top" alt="..."></a>
+                    <div class="card-body"> 
+                      <section class="d-flex justify-content-between">
+                        <div>
+                          <a href="C:Users\Dev\OneDrive\FSD IP\Videos/NV.mp4"> <i class="bi bi-play-circle-fill card-icon"  ></i></a>
+                          <i  class="bi bi-plus-circle card-icon"></i>
+                        </div>
+                        <div>
+                          <i class="bi bi-arrow-down-circle card-icon"></i>
+                        </div>
+                      </section>
+                      <section class="d-flex align-items-center justify-content-between" >
+                         <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">3h 14m</p> 
+                           <span class="m-2 netflix-card-text text-white">Limited Series</span> <span class="border netflix-card-text p-1 text-white">HD</span>
+                        
+                        </section>
+                        <span class="netflix-card-text text-white">Provocative • Psychological • Thriller</span>
+                  </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
+              <img src="C:Users\Dev\OneDrive\FSD IP\Images/prev.png" alt="...">
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
+              <img src="C:Users\Dev\OneDrive\FSD IP\Images/next.png" alt="...">
+            </button>
+          </div>
+        </div>
+        <!-- /slide-3 -->
+
+      </div>
+      <!-- /sliders -->
+      
+      <!-- footer-->
+      <div class="container footer">
+          <div class="row">
+            <div class="col-md-10 mx-auto">
+                <div class="row">
+                  <div class="col-md-4">
+                        <ul class="creadits">
+                          <li><a href="https://media.netflix.com/en/" target="_blank">Media Center</a></li>
+                          <li><a href="https://help.netflix.com/legal/privacy" target="_blank">Privacy</a></li>
+                          <li><a href="https://help.netflix.com/en/contactus" target="_blank">Contact Us</a></li>
+                        </ul>
+                  </div>
+                  <div class="col-md-4">
+                    <ul class="creadits">
+                      <li><a href="https://ir.netflix.net/ir-overview/profile/default.aspx"target="_blank">Investor Relation</a></li>
+                      <li><a href="https://help.netflix.com/legal/termsofuse" target="_blank">Terms and Conditions</a></li>
+                      <li><a href="https://help.netflix.com/legal/notices"target="_blank" >Legal Notices</a></li>
+                    </ul>
+              </div>
+              <div class="col-md-4">
+                <ul class="creadits">
+                  <li><a href="https://help.netflix.com/en" target="_blank">Help Center</a></li>
+                  <li><a href="https://jobs.netflix.com/" target="_blank">Jobs</a></li>
+                  <li><a href="https://www.netflix.com/in/redeem" target="_blank" >Gift card</a></li>
+                </ul>
+               </div>  
+                </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-10 mx-auto">
+              <div class="row">
+                <div class="col">
+                  <p class="copy-right">@netflix copyright ,All Rights Served</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <!-- /footer-->
+
+      <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+  </body>
+</html>

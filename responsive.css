@@ -1,0 +1,245 @@
+@media (max-width:1080px){
+    .netflix-padding {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .netflix-home-video video {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .netflix-home-video .content .left img {
+        margin-top: 325px;
+        height: 79px;
+        width: 240px;
+    }
+    .netflix-home-video .content .left {
+        margin-left: 50px;
+    }
+    .slider {
+        position: absolute;
+        top: 550px;
+    }
+    .margin-right {
+        margin-right: 10px;
+    }
+    .carousel-control-prev img {
+        margin-top: 0px;
+        height: 50px;
+        width: 50px;
+        margin-left: -23px;
+    }
+
+    .carousel-control-next img {
+        margin-top: 0px;
+        height: 50px;
+        width: 50px;
+        margin-right: -23px;
+    }
+    .slide2 {
+        position: absolute;
+        top: 700px;
+    }
+    .slide3 {
+        position: absolute;
+        top: 830px;
+    }
+    .footer {
+        margin-top: 500px;
+        margin-bottom: 100px;
+    }
+    .netflix-profile .dropdown .dropdown-menu {
+        margin-left: -70px;
+        margin-top: 7px;
+    }
+    .netflix-profile .dropdown .dropdown-menu .dropdown-item {
+        padding: 3px 20px;
+    }
+    .card:hover > .card-body{
+        display: block;
+        height: 100% !important; 
+    }
+    .card-body{
+        display: none;
+        padding: 5px 10px;
+        top: 90px;
+        width: 100%;
+    }
+    .card-icon{
+        font-size:15px;
+    }
+    .netflix-card-text{
+        font-size: 8px ;
+    }
+    .progress{
+        height: 1px;
+    }
+    .netflix-progress span{
+        display: none;
+    }
+    .netflix-profile .dropdown .dropdown-menu .dropdown-item{
+        font-size: 15px;
+    }
+
+}
+
+
+@media(max-width:767.98px){
+    .netflix-padding-left{
+        padding-left: 10px !important;
+    }
+    
+    
+    .netflix-padding-right{
+        padding-right: 10px !important;
+    }
+    .navbar-brand img{
+        width: 43px;
+   }
+   .navbar{
+       padding-top: unset !important;
+       padding-bottom: unset !important;
+   }
+   i{
+       font-size: 15px;
+       cursor: pointer;
+       padding: 15px !important;
+   }
+   .netflix-profile{
+       margin-left: 5px ;
+   }
+   .netflix-dropdown-box{
+    display: block;
+}
+.netflix-nav{
+    display: none !important;
+}
+.card-body{
+    margin-top: -20px !important;
+    height: 1000px;
+}
+.card-icon{
+    font-size:0px !important;
+}
+.netflix-card-text{
+    font-size: 2px ;
+}
+
+/* video */
+.netflix-home-video .content .left {
+    margin-left: 25px;
+    margin-top: -100px;
+}
+.netflix-home-video .content .left img{
+    width: 150px;
+    width: 180px;
+    margin-top: 300px !important;
+}
+button{
+    font-size: 10px !important;
+    width: max-content !important;
+    opacity: 0.8;
+}
+.netflix-profile img{
+    width: 25px;
+    height: 25px;
+}
+
+/*video*/
+.slider{
+    top: 400px;
+}
+.slide2{
+    top: 450px;
+}
+.slide3{
+    top: 670px;
+}
+
+.card{
+    width: 150px;
+}
+.margin-right{
+    margin-right: unset;
+}
+.card-icon{
+    font-size: 17px !important;
+}
+.card-body{
+    top: 80px !important;
+}
+.netflix-card-text{
+    font-size: 8px;
+}
+.position-slider2{
+    top: 0px !important;  
+}
+.margin-title{
+    margin-top: 100px;
+}
+.margin-title2{
+    margin-top: 14px;
+}
+.copy-right{
+    
+      margin-left: 0px !important;
+}
+.carousel-control-prev img {
+    margin-top: 20px;
+    height: 30px;
+    width: 30px;
+    margin-left: 0px;
+    margin-bottom: 50px;
+}
+
+.carousel-control-next img {
+    margin-top: 20px;
+    height: 30px;
+    width: 30px;
+    margin-right: 0px;
+    margin-bottom: 50px;
+}
+}
+
+@media (max-width:560px){
+    .netflix-dropdown-box{
+        display: block;
+    }
+    .netflix-home-video video {
+        width: 100%;
+        margin-top: 40px;
+    }
+    .netflix-home-video .content .left img{
+        height: 60px;
+        width: 150px;
+        margin-top: 250px !important;
+    }
+    .slider{
+        top: 320px;
+    }
+    .slide2{
+        top: 330px;
+    }
+    .slide3{
+        top: 520px;
+    }
+    .carousel-control-prev img {
+        margin-top: 5px;
+        height: 30px;
+        width: 30px;
+        margin-left: 0px;
+        margin-bottom: 50px;
+    }
+    
+    .carousel-control-next img {
+        margin-top: 5px;
+        height: 30px;
+        width: 30px;
+        margin-right: 0px;
+        margin-bottom: 50px;
+    }
+    .footer {
+        margin-top: 350px;
+        margin-bottom: 100px;
+    }
+}
